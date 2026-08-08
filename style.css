@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(232, 227, 227);
+}
+
+nav {
+    background-image: url(./Gemini_Generated_Image_ozn4tlozn4tlozn4.png);
+}
+
+nav img {
+    height: 100px;
+    width: 100px;
+
+}
+
+nav li {
+    display: inline-flex;
+    list-style: none;
+}
+
+nav li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    padding: 10px;
+}
+
+nav li a:hover {
+    background-color: blue;
+    color: white;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+h1,
+h2 {
+    color: rgba(139, 58, 58, 0.788);
+}
+
+main {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin: 40px;
+}
+
+main h2,
+p {
+    margin-bottom: 30px;
+}
+
+main img {
+    height: 300px;
+    width: 400px;
+}
+
+main a {
+    padding: 10px;
+    border: solid 1px black;
+    text-decoration: none;
+    width: fit-content;
+}
+
+main a:hover {
+    background-color: black;
+    color: white;
+}
+
+section a {
+    display: block;
+    margin-bottom: 40px;
+}
+
+article {
+    display: block;
+    max-width: 30%;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
