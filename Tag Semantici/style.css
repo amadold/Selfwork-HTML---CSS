@@ -8,19 +8,27 @@ body {
     background-color: rgb(232, 227, 227);
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 nav {
     background-image: url(./Gemini_Generated_Image_ozn4tlozn4tlozn4.png);
+    display: flex;
+    justify-content: space-between;
 }
 
 nav img {
     height: 100px;
     width: 100px;
-
 }
 
-nav li {
-    display: inline-flex;
+nav ul {
+    display: flex;
     list-style: none;
+    align-self: flex-end;
 }
 
 nav li a {
@@ -28,12 +36,17 @@ nav li a {
     font-size: 20px;
     font-weight: bold;
     color: black;
+    border: 5px solid transparent;
+    border-radius: 5px;
     background-color: white;
     padding: 10px;
+    margin-left: 10px;
+    display: block;
 }
 
 nav li a:hover {
-    background-color: blue;
+    border-bottom: 5px solid black;
+    background-color: rgb(184, 184, 202);
     color: white;
 }
 
@@ -69,11 +82,19 @@ main a {
     border: solid 1px black;
     text-decoration: none;
     width: fit-content;
+    color: black;
 }
 
 main a:hover {
     background-color: black;
     color: white;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 16px;
 }
 
 section a {
@@ -82,13 +103,37 @@ section a {
 }
 
 article {
-    display: block;
-    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+    width: 50%;
+    margin: 20px;
+}
+
+article img {
+    width: 100%;
+    margin: 12px 0;
 }
 
 footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: left;
     background-color: black;
     color: white;
-    padding: 10px;
-    text-align: center;
+    padding: 20px;
+    height: 15.2vh;
+}
+
+footer li,
+p {
+    list-style: none;
+    margin-top: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
 }
